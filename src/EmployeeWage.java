@@ -45,5 +45,25 @@ public class EmployeeWage {
 		totalwage=totalwage+wage;
 		}
 		System.out.println("Wage=" +totalwage);		
+		if ( random == 1)
+		{
+			System.out.println("Present" + random);
+			if ( halfday == 0)
+			{
+				System.out.println("Employee present for half day only" + halfday);
+				wage=WagePerHour*HalfDayHour;
+			}
+			else
+			{
+				System.out.println("Employee present for full day" + halfday);
+				wage=WagePerHour*FullDayHour;
+			}
+		}
+		else
+		{
+			System.out.println("Absent" + random);
+			wage=0;
+		}
+		System.out.println("Wage =" +wage);		
 	}
 }
